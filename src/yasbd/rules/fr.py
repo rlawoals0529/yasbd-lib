@@ -20,6 +20,10 @@ class FrRules(Rules):
         "ms", "pl", "pref", "suppl", "suiv", "t", "trad",
     }
 
+    CASE_SENSITIVE_REFERENCE_ABBRVS = Rules.CASE_SENSITIVE_REFERENCE_ABBRVS | {
+        "Est",
+    }
+
     SECTION_MARKERS = Rules.SECTION_MARKERS | {
         "Annexe", "Chapitre", "Sous-section", "Unité", "Préface",
     }

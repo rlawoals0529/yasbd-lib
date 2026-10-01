@@ -27,6 +27,10 @@ class EsRules(Rules):
         "cf", "incl", "cía", "s",
     }
 
+    CASE_SENSITIVE_REFERENCE_ABBRVS = Rules.CASE_SENSITIVE_REFERENCE_ABBRVS | {
+        "No", "Nos", "Para",
+    }
+
     SECTION_MARKERS = Rules.SECTION_MARKERS | {
         "Artículo", "Anexo", "Capítulo", "Sección", "Subsección", "Unidad",
         "Módulo", "División",

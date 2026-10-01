@@ -18,6 +18,7 @@ TEST_DATA = [
     "O total, aprox. 500 reais, foi pago ontem.",
     "Veja o cap. 3 no t. II da obra.",
     "O art.º 4 e o n.º 8 são fundamentais.",
+    "Consulte o No. 103 do relatório.",
     "Liga ao dir. geral para o tel. 555-1234.",
     "Liga ao tel. 555-0199.| Envia o fax. 02-555 amanhã.",
     "Comprei pão, leite, etc. para o jantar.",

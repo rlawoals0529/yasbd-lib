@@ -102,6 +102,8 @@ class Rules:
         "et al", "s", "univ",
     }
 
+    CASE_SENSITIVE_REFERENCE_ABBRVS = set()
+
     SECTION_MARKERS = {
         "Part", "Parte", "Section", "Subsection", "Article",
         "Module", "Division", "Usage", "Unit", "Volume",
@@ -334,6 +336,18 @@ class Rules:
                 """, re.M | re.X
             )
         ]
+
+        if cls.CASE_SENSITIVE_REFERENCE_ABBRVS:
+            cls.MID_SENTENCE_FINDER_LST.append(
+                re2.compile(
+                    rf"""
+                    \b(?:{build_optimized_pattern(cls.CASE_SENSITIVE_REFERENCE_ABBRVS)})
+                    {cls.DOTS_PATTERN}
+                    (?=\s+(?:\(|\[|\p{{Lu}}\b|\p{{N}}|[IVXLCDM]+))
+                    """,
+                    re2.X,
+                )
+            )
 
         # https://regex101.com/r/EGkRU8/7
         _quotative_pattern = build_optimized_pattern(

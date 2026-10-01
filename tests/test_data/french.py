@@ -9,6 +9,7 @@ TEST_DATA = [
     "M. Dupont est un professeur.",
     "Veuillez consulter la p. 55 du livre.",
     "Voir fig. 3 dans le chap. 5.",
+    "Voir Est. 2024 dans le rapport.",
     "L'ouvrage est publié dans le t. II du recueil.",
     "Le rapport a été publié en janv. 2024.",
     "Elle est arrivée un lun. matin.",

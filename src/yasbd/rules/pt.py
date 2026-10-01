@@ -24,6 +24,10 @@ class PtRules(Rules):
         "incl", "cia", "vol", "ed", "puj", "aprox",
     }
 
+    CASE_SENSITIVE_REFERENCE_ABBRVS = Rules.CASE_SENSITIVE_REFERENCE_ABBRVS | {
+        "No", "Nos", "Para",
+    }
+
     SECTION_MARKERS = Rules.SECTION_MARKERS | {
         "Artigo", "Anexo", "Capítulo", "Secção", "Seção", "Subsecção", "Subseção",
         "Unidade", "Módulo", "Divisão",
